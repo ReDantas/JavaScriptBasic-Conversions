@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  /*
+  Exemplo de troca de entrada, primeiro inteiro depois string, sem precisar fazer nada
+  */
+  var abc = 42;
+  abc = "new value";
+/*
+Concatenando string e numero, assim ele entende que é tudo string
+ */
+var x = "String"+ 43;
+/*
+ Concatenando numero e string, assim ele também entende que é tudo string
+ */
+var y = 30 + "String";
+document.write(y);
+document.write(x);
+console.log(x);
+console.log(y);
+
+  /*
+   Subtraindo valor de uma String, não precisa fazer nada
+   */
+  var strCalcSub = "15" - 5;
+  console.log(strCalcSub);
+
+  /*
+   Somando valor de uma String, assim ele apenas concatena, como visto anteriormente.
+   */
+  var strCalcSum = "15" + 5;
+  //Transforma o valor em 155 (sendo 15 E 5)
+  console.log(strCalcSum);
+  //Transforma o valor em 160 (sendo 15+5)
+  strCalcSum = parseInt(strCalcSum) + 5;
+  console.log(strCalcSum);
+
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
